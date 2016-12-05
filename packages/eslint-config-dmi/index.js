@@ -1,3 +1,5 @@
+const projectDir = process.cwd();
+
 module.exports = {
     parser: 'babel-eslint',
     plugins: ['flowtype', 'promise', 'no-async-without-await'],
@@ -44,7 +46,10 @@ module.exports = {
          */
         'import/no-extraneous-dependencies': ['error',
             {
-                devDependencies: ['**/*.test.js'],
+                devDependencies: [
+                    '**/*.test.js',
+                    `!${projectDir}/src/**/*`,
+                ],
             },
         ],
 
@@ -65,7 +70,6 @@ module.exports = {
          * Flowtype
          */
         'flowtype/type-id-match': ['error', '^([A-Z][A-Za-z0-9]+)+Type$'],
-
         'flowtype/object-type-delimiter': ['error', 'comma'],
 
         /**
