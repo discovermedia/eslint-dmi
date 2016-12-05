@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dmi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,18 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^3.11.1"
-  },
-  "peerDependencies": {
-    "eslint": "^3.11.x"
-  },
   "dependencies": {
     "babel-eslint": "^7.1.1",
+    "eslint": "^3.11.1",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
-    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-no-async-without-await": "^1.2.0",
     "eslint-plugin-promise": "^3.4.0"
   }
