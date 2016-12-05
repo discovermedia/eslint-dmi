@@ -41,6 +41,12 @@ module.exports = {
             },
         ],
 
+        // Always require brackets because it is easier to extend later
+        'arrow-body-style': ['error', 'always'],
+
+        // Always require parens because it is more consistent, especially with flow
+        'arrow-parens': ['error', 'always'],
+
         /**
          * import
          */
